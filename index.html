@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form" class="form">
+        <div id="bg1">
+            <div id="logo"></div>
+        </div>
+        <div class="container-fluid px-5">
+            <div id="bg2">
+                <div class="card mb-5">
+                    <div class="matop_gknn card-body bg-white">
+                        <div class=" p-sm-4 border-bottom">
+                            <h2 class="text-center">แบบฟอร์มใบสมัครงาน</h2>
+                            <h6 class="text-center">APPLICATION FORM</h6>
+                            <div class="head_con2 ">
+                                <label>ความต้องการ</label>
+                                <h6>REQUIREMENT</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row ">
+                            <div class=" col-md-4 col-sm-6 col-xs-12 mb-3">
+                                <label>ตำแหน่งงานที่สมัครงาน</label>
+                                <span style="color: red;">*</span>
+                                <h6>THE COMPANY YOU WANT TO APPLY FOR A JOB</h6>
+                                <div class="form-control_gknn">
+                                    <select class=" form-select " aria-label="Default select example" id="company_job"
+                                        style="border-color: none">
+                                        <option value="0" selected>Please select company</option>
+                                        <option value="1">MEDEZE GROUP Public Co., Ltd.</option>
+                                        <option value="2">MEDEZE NK Co., Ltd.</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="form-control_gknn col-md-4 col-sm-6 col-xs-12  ">
+                                <label>ตำแหน่งงานที่สมัครงาน</label>
+                                <span style="color: red;">*</span>
+                                <h6>EMPLOYMENT DESIRED</h6>
+                                <div class="form-control_gknn">
+                                    <select class="form-select " aria-label="Default select example" id="employment_job"
+                                        style="border-color: none">
+                                        <option value="0" selected>Please select position</option>
+                                        <option value="1"> MSC Laboratory Supervisor</option>
+                                        <option value="2"> North & South Business Development Supervisor</option>
+                                        <option value="3"> Product Consultant Manager Adipose (Up Country)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class=" col-md-4 col-sm-6 col-xs-12 ">
+                                <label>อัตราเงินเดือนที่ต้องการ</label>
+                                <span style="color: red;">*</span>
+                                <h6>SALARY EXPECTED</h6>
+                                <div class="input-group flex-nowrap ">
+                                    <input type="number" class="form-control form-control_gknn" placeholder="0"
+                                        aria-label="Username" id="salary_monny" aria-describedby="addon-wrapping"
+                                        min="0" max="100000">
+                                </div>
+
+                            </div>
+                            <div class="form-control_gknn col-md-4 col-sm-12 col-xs-12 ">
+                                <label>วันที่สามารถเริ่มงานได้ </label>
+                                <span style="color: red;">*</span>
+                                <h6>READY TO START DATE</h6>
+                                <div class="input-group flex-nowrap ">
+                                    <input type="datetime-local" name="birthdaytime" class="form-control"
+                                        id="start_job">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .................... -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid  bg-white">
+
+                        <div class="p-sm-4 head_con2 border-bottom ">
+                            <div class="col-4">
+                                <label>ความต้องการ</label>
+                                <h6>REQUIREMENT</h6>
+                            </div>
+                        </div>
+                        <div class="p-sm-4 row">
+
+                            <div class="form-control_gknn col-md-4 col-sm-4 col-xs-12  mb-4">
+                                <label>คำนำหน้า</label>
+                                <span style="color: red;">*</span>
+                                <h6>PREFIX</h6>
+                                <select class="form-select" aria-label="Default select example" id="mr_mrs">
+                                    <option value="0" selected>Please select prefix</option>
+                                    <option value="1">Mr. / นาย</option>
+                                    <option value="2">Mrs. / นาง</option>
+                                    <option value="3">Miss / นางสาว</option>
+                                    <option value="4">Ms.</option>
+                                </select>
+                            </div>
+                            <div class="form-control_gknn col-md-8 col-sm-7 col-xs-12">
+                                <label>ชื่อ - นามสกุล (ภาษาไทย)</label>
+                                <span style="color: red;">*</span>
+                                <h6>FULLNAME TH</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="FULLNAME TH"
+                                        aria-label="Username" id="fullname_th" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-0"></div>
+                            <div class="col-md-8 col-sm-7 col-xs-12 mb-4">
+                                <label> ชื่อ - นามสกุล (ภาษาอังกฤษ) </label>
+                                <span style="color: red;">*</span>
+                                <h6>FULLNAME EN</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="FULLNAME EN"
+                                        aria-label="Username" id="fullname_eng" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 mb-4">
+                                <label>ชื่อเล่น</label>
+                                <span style="color: red;">*</span>
+                                <h6>NICK NAME</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="NICK NAME"
+                                        aria-label="Username" id="nick_name" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>วันเกิด </label>
+                                <span style="color: red;">*</span>
+                                <h6>DATE OF BIRTH</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="datetime-local" name="birthdaytime" class="form-control"
+                                        id="birthdaytime">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <label>อายุ</label>
+                                <h6>AGE</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="ตัวอย่าง 1ปี"
+                                        aria-label="Username" disabled value="โปรดเลือกตัวเกิด" id="age_me"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>บัตรประชาชนเลขที่ / หมายเลขหนังสือเดินทาง</label>
+                                <span style="color: red;">*</span>
+                                <h6>ID CARD NO. / PASSPORT NO</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="ID CARD NO. / PASSPORT NO"
+                                        id="id_card_me" aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>กรุ๊ปเลือด</label>
+                                <span style="color: red;">*</span>
+                                <h6>BLOOD GROUP</h6>
+                                <select class="form-select" aria-label="Default select example" id="blood_group">
+                                    <option value="0" selected>Please choose blood group</option>
+                                    <option value="1">A</option>
+                                    <option value="2">AB</option>
+                                    <option value="3">B</option>
+                                    <option value="3">O</option>
+                                    <option value="3">N/A</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                <label>ส่วนสูง</label>
+                                <h6>HEIGHT CM.</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="height_me" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                <label>น้ำหนัก</label>
+                                <h6>WEIGHT KG.</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="kg_me" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>สัญชาติ </label>
+                                <span style="color: red;">*</span>
+                                <h6>NATIONALITY</h6>
+                                <select class="form-select" aria-label="Default select example" id="NATIONALITY">
+                                    <option value="0" selected>Please select nationality</option>
+                                    <option value="1">Abkhazia</option>
+                                    <option value="2">Thai</option>
+                                    <option value="3">Canada</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <label>ศาสนา</label>
+                                <span style="color: red;">*</span>
+                                <h6>RELIGION</h6>
+                                <select class="form-select" aria-label="Default select example" id="RELIGION">
+                                    <option value="0" selected>Please select religion</option>
+                                    <option value="1">Buddhism</option>
+                                    <option value="2">Christianity</option>
+                                    <option value="3">Islam</option>
+                                    <option value="4">Hinduism</option>
+                                    <option value="5">Taoism</option>
+                                    <option value="6">N/A</option>
+
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="exampleFormControlTextarea1" class="form-label">ที่อยู่ปัจจุบัน</label>
+                                <span style="color: red;">*</span>
+                                <h6>MAILING ADDRESS</h6>
+                                <div class="input-group flex-nowrap">
+                                    <textarea class="form-control" id="ADDRESS_me" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>มือถือ</label>
+                                <span style="color: red;">*</span>
+                                <h6>MOBILE</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="MOBILE" aria-label="Username"
+                                        id="mobile_me" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>อีเมลล์</label>
+                                <span style="color: red;">*</span>
+                                <h6>EMAIL</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="email" class="form-control" placeholder="EMAIL" aria-label="Username"
+                                        id="email_me" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>เฟสบุ๊ค</label>
+                                <h6>FACEBOOK</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="FACEBOOK" aria-label="Username"
+                                        id="facebook_me" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>สถานภาพทางการทหาร</label>
+                                <span style="color: red;">*</span>
+                                <h6>MILITARY SERVICE</h6>
+                                <select class="form-select" aria-label="Default select example" id="SERVICE">
+                                    <option value="0" selected>Please select military service</option>
+                                    <option value="1">ผ่านการเกณฑ์ทหารแล้ว (Service)</option>
+                                    <option value="2">ยังไม่ผ่านการเกณฑ์ทหารแล้ว (If not yet served, when?)</option>
+                                    <option value="3">ได้รับการยกเว้น (Exempted)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>สถานภาพการสมรส</label>
+                                <span style="color: red;">*</span>
+                                <h6>MARITAL STATUS</h6>
+                                <select class="form-select" aria-label="Default select example" id="STATUS_Single">
+                                    <option value="0" selected>Please select marital status</option>
+                                    <option value="1">โสด (Single)</option>
+                                    <option value="สมรส">สมรส (Married)</option>
+                                    <option value="3">หย่า (Divorced)</option>
+                                    <option value="4">หม้าย (Widowed)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-0 col-xs-0 mb-4"></div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>ชื่อคู่สมรส</label>
+                                <h6>SPOUSE’S NAME</h6>
+                                <div class="input-group flex-nowrap" id="spouse_name_disabled">
+                                    <input type="text" class="form-control" placeholder="" aria-label="Username"
+                                        id="spouse_name" disabled aria-describedby="addon-wrapping" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>เบอร์โทรศัพท์</label>
+                                <h6>MOBILE PHONE</h6>
+                                <div class="input-group flex-nowrap" id="PHONE_spouse_disabled">
+                                    <input type="text" class="form-control" placeholder="" aria-label="Username"
+                                        value="" id="PHONE_spouse" disabled aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 mb-4">
+                                <label>จำนวนบุตร (หากไม่มีบุตร ให้ระบุ 0)</label>
+                                <span style="color: red;">*</span>
+                                <h6>NO. OF CHILDREN (IF NO CHILDREN, SPECIFY 0)</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control"
+                                        placeholder="NO. OF CHILDREN (IF NO CHILDREN, SPECIFY 0)" aria-label="Username"
+                                        id="CHILDREN" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>อาชีพ</label>
+                                <h6>APPLICATION FORM</h6>
+                                <div class="input-group flex-nowrap" id="APPLICATION_disabled">
+                                    <input type="text" class="form-control" placeholder="" aria-label="Username"
+                                        id="APPLICATION" disabled aria-describedby="addon-wrapping" value="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>สถานที่ทำงาน</label>
+                                <h6>COMPANY NAME</h6>
+                                <div class="input-group flex-nowrap" id="COMPANY_name_disabled">
+                                    <input type="text" class="form-control" placeholder="" aria-label="Username"
+                                        value="" id="COMPANY_name" disabled aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-0 col-xs-0 mb-4"></div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>ชื่อบิดา</label>
+                                <span style="color: red;">*</span>
+                                <h6>FATHER’S NAME </h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="FATHER_name" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>อาชีพ</label>
+                                <span style="color: red;">*</span>
+                                <h6>OCCUPATION</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="FATHER_occ" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>อายุ</label>
+                                <span style="color: red;">*</span>
+                                <h6>AGE</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="FATHER_age" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>สถานภาพ</label>
+                                <span style="color: red;">*</span>
+                                <h6>STATUS</h6>
+                                <select class="form-select" aria-label="Default select example" id="FATHER_status">
+                                    <option value="0" selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>ชื่อมารดา </label>
+                                <span style="color: red;">*</span>
+                                <h6>MATHER’S NAME</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username "
+                                        id="MATHER_name" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>อาชีพ</label>
+                                <span style="color: red;">*</span>
+                                <h6>OCCUPATION</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="MATHER_occ" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>อายุ</label>
+                                <span style="color: red;">*</span>
+                                <h6>AGE</h6>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                        id="MATHER_age" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                <label>สถานภาพ</label>
+                                <span style="color: red;">*</span>
+                                <h6>STATUS</h6>
+                                <select class="form-select" aria-label="Default select example" id="MOTHER_status">
+                                    <option value="0" selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ............... -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ช">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="col-12">
+                                    <label>กรณีฉุกเฉินบุคคลที่สามารถติดต่อได้</label>
+                                    <h6>PERSON TO BE NOTIFIED IN CASE OF EMERGENCY</h6>
+                                </div>
+                            </div>
+                            <div class="p-sm-4 row">
+                                <div class="col-md-3 col-sm-6 col-xs-12 mb-4">
+                                    <label>ชื่อ - นามสกุล</label>
+                                    <span style="color: red;">*</span>
+                                    <h6>FULLNAME</h6>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                            id="EMERGENCY_name" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12 mb-4">
+                                    <label>โทรศัพท์</label>
+                                    <span style="color: red;">*</span>
+                                    <h6>MOBILE PHONE</h6>
+                                    <select class="form-select" aria-label="Default select example"
+                                        id="EMERGENCY_mobile">
+                                        <option value="0" selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12 mb-4">
+                                    <label>ความสัมพันธ์</label>
+                                    <span style="color: red;">*</span>
+                                    <h6>RELATIONSHIP</h6>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                            id="EMERGENCY_relationship" aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .............. -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 border-bottom">
+
+                            <div class="p-sm-4 row">
+                                <div class="col-md-6 col-sm-6 col-xs-12 mb-4">
+                                    <label>ท่านรู้จักใครที่เป็นพนักงานอยู่ในบริษัทฯหรือไม่และมีความสัมพันธ์อย่างไร</label>
+                                    <h6>DO YOU KNOW ANYONE WHO WORKS FOR US ?</h6>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 mb-4  ">
+                                    <select class="form-select" aria-label="Default select example" id="khow_works">
+                                        <option value="0" selected>Open this select menu</option>
+                                        <option value="1">รู้จัก</option>
+                                        <option value="2">ไม่รู้จัก</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="myDIV" style="display: none;">
+                            <div class="card-body">
+                                <div class="p-sm-4 row">
+                                    <div class="col-12 mb-4">
+                                        <label>โปรดระบุ</label>
+                                        <span style="color: red;">*</span>
+                                        <h6>PLEASE FILL</h6>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <label>ชื่อ - นามสกุล</label>
+                                                <h6>FULLNAME</h6>
+                                                <div class="input-group flex-nowrap">
+                                                    <input type="text" class="form-control" placeholder="0"
+                                                        aria-label="Username" value="job-friend-name"
+                                                        id="job-friend-name" aria-describedby="addon-wrapping">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <label>โรค</label>
+                                                <h6>DISEASE</h6>
+                                                <div class="input-group flex-nowrap">
+                                                    <input type="text" class="form-control" placeholder="0"
+                                                        aria-label="Username" value=" เช่น พี่"
+                                                        id="job-friend-relationship" aria-describedby="addon-wrapping">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+                <!-- ....... -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label>ประวัติสุขภาพ</label>
+                                    <h6>HEALTH PROFILE</h6>
+                                </div>
+                            </div>
+                            <div class="p-sm-4 row">
+
+                                <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                    <label>ท่านเคยเจ็บป่วยด้วยโรคเรื้อรัง</label>
+                                    <span style="color: red;">*</span>
+                                    <h6>HAVE YOU EVER HAD CHRONIC DISEASE</h6>
+                                    <select class="form-select" aria-label="Default select example" id="HAD">
+                                        <option value="1" selected>ไม่เคย (No)</option>
+                                        <option value="2">เคย (Yes)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-xs-12 mb-4">
+                                    <label>โรค</label>
+                                    <h6>DISEASE</h6>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                            disabled id="DISEASE1" value="เช่น โรคเบาหวาน"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                    <label>ท่านเคยเข้ารับการรักษาในสถานพยาบาลเกิน 3 วัน </label>
+                                    <span style="color: red;">*</span>
+                                    <h6>HAVE YOU EVER BEEN ADMITTED TO THE HOSPITAL MORE 3 DAYS</h6>
+                                    <select class="form-select" aria-label="Default select example" id="hospital_day">
+                                        <option value="1" selected>ไม่เคย (No)</option>
+                                        <option value="2">เคย (Yes)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-xs-12 mb-4">
+                                    <label>โรค</label>
+                                    <h6>DISEASE</h6>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                            disabled id="DISEASE2" value="เช่น เลือดจาง"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                                    <label>ท่านเคยเข้ารับการผ่าตัด</label>
+                                    <span style="color: red;">*</span>
+                                    <h6>HAVE YOU EVER HAD UNDERGONE AN OPERATION</h6>
+                                    <select class="form-select" aria-label="Default select example" id="HAD_UNDERGONE">
+                                        <option value="1" selected>ไม่เคย (No)</option>
+                                        <option value="2">เคย (Yes)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-xs-12 mb-4">
+                                    <label>โรค</label>
+                                    <h6>DISEASE</h6>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
+                                            disabled id="DISEASE3" value="เช่น รถล้ม "
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ..................... -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-8 col-xs-8 mb-4">
+                                        <label>ประวัติการศึกษา</label>
+                                        <span style="color: red;"> (ระบุได้สูงสุด 2 วุฒิการศึกษา)</span>
+                                        <h6>EDUCATION</h6>
+                                    </div>
+                                    <div class="col d-flex justify-content-end mb-4">
+                                        <button type="submit" class="btn btn-outline-medeze " id="addTrainingRecord">
+                                            Add
+                                            Former</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-sm-4 row">
+
+                                <div class="col-12 mb-4">
+                                    <label>กิจกรรมระหว่างการศึกษา (ถ้ามี)</label>
+                                    <h6>EXTRA CURRICULAR ACTIVITIES</h6>
+                                    <div class="input-group flex-nowrap">
+                                        <textarea class="form-control" id="CURRICULAR_ACTIVITIES" rows="4"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ...... -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-9 col-xs-10">
+                                        <label>การฝึกอบรมและอื่นๆ</label>
+                                        <span style="color: red;">(ระบุได้สูงสุด 3 รายการ)</span>
+                                        <h6>TRAINING, OTHER</h6>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-2 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-outline-medeze " id="btn_from1"
+                                           > Add
+                                            Former</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <ul id="todo-list"></ul>
+                            </div>
+                        </div>
+                        <section class="Show">
+                            <div class="container">
+                                <div id="showlist">
+
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-9 col-xs-10">
+                                        <label>ประวัติการทำงาน </label>
+                                        <span style="color: red;">(ระบุได้สูงสุด 3 รายการ)</span>
+                                        <h6>FORMER EMPLOYEE</h6>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-2 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-outline-medeze " id="btn_from2"> Add
+                                            Former</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <ul id="todo-list1"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ...... -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <label>ความต้องการ</label>
+                                    <h6>REQUIREMENT</h6>
+                                </div>
+                            </div>
+                            <div class="p-sm-4 row ">
+                                <div class="row mx-1 ">
+                                    <div
+                                        class=" col-md-3 col-sm-12 col-xs-12 text-center border d-flex flex-column justify-content-center align-items-center">
+                                        <label>อังกฤษ</label>
+                                        <h6>ENGLISH</h6>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border   justify-content-center align-items-center">
+                                        <label>พูด</label>
+                                        <h6>SPEAKING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="SPEAKING_eng">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>อ่าน</label>
+                                        <h6>READING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="READING_eng">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>เขียน</label>
+                                        <h6>WRITING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="WRITING_eng">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mx-1 ">
+                                    <div
+                                        class=" col-md-3 col-sm-12 col-xs-12 text-center border d-flex flex-column justify-content-center align-items-center">
+                                        <label>ไทย</label>
+                                        <h6>THAI</h6>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border   justify-content-center align-items-center">
+                                        <label>พูด</label>
+                                        <h6>SPEAKING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="SPEAKING_thai">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>อ่าน</label>
+                                        <h6>READING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="READING_thai">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>เขียน</label>
+                                        <h6>WRITING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="WRITING_thai">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mx-1 ">
+                                    <div
+                                        class=" col-md-3 col-sm-12 col-xs-12 text-center border d-flex flex-column justify-content-center align-items-center">
+                                        <label>จีน</label>
+                                        <h6>CHINESE</h6>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border   justify-content-center align-items-center">
+                                        <label>พูด</label>
+                                        <h6>SPEAKING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="SPEAKING_chin">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>อ่าน</label>
+                                        <h6>READING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="READING_chin">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>เขียน</label>
+                                        <h6>WRITING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="WRITING_chin">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mx-1">
+                                    <div
+                                        class="col-md-3 col-sm-12 col-xs-12 text-center border d-flex flex-column justify-content-center align-items-center">
+                                        <label>อื่นๆ</label>
+                                        <h6>OTHER LANGUAGES</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input class="form-control mb-4" type="text" value="อื่นๆ"
+                                                aria-label="readonly input example" readonly>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border   justify-content-center align-items-center">
+                                        <label>พูด</label>
+                                        <h6>SPEAKING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="SPEAKING_OTHER">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>อ่าน</label>
+                                        <h6>READING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="READING_OTHER">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                    <div
+                                        class="col-md-3 col-sm-4 col-xs-12 text-center border  justify-content-center align-items-center">
+                                        <label>เขียน</label>
+                                        <h6>WRITING</h6>
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="WRITING_other">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ดีมาก (Excellent)</option>
+                                            <option value="2">ดี (Good)</option>
+                                            <option value="3">พอใช้ (Fair)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row mb-4 row-cols-1 row-cols-md-2">
+                    <div class="col p-2 container-fluid">
+                        <div class="card p-sm-4 border-bottom bg-white">
+                            <div class=" head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label>ความสามารถพิเศษ</label>
+                                        <h6>SPECIALIST SKILL</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <textarea class="form-control col-12" id="SKILL_me" rows="7"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col mb-4 p-2 ßcontainer-fluid">
+                        <div class="card p-sm-4 border-bottom">
+
+                            <div class=" head_con2   bg-white">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-12 col-xs-12">
+                                        <label>ยานพาหนะ</label>
+                                        <h6>VEHICLE</h6>
+                                    </div>
+                                    <div class="row mb-5 p-5 border-bottom">
+                                        <div
+                                            class="row col-md-4 col-sm-4 col-xs-12 mb-4 text-start d-flex   flex-nowrap justify-content-center align-items-start ">
+                                            <input class="form-check-input col-md-12 col-sm-4 col-xs-1" type="checkbox"
+                                                value="id_car" id="id_car">
+                                            <label class="form-check-label col-md-12 col-sm-8 col-xs-3"
+                                                for="flexCheckDefault">
+                                                <label>รถยนต์</label>
+                                                <h6>No.</h6>
+                                            </label>
+                                        </div>
+
+                                        <div class=" flex-nowrap col-md-12 col-sm-8 col-xs-12 d-flex flex-column ">
+                                            <label>เลขที่ใบขับขี่</label>
+                                            <h6>No.</h6>
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="numcar" value="เช่น กข 1410"
+                                                aria-describedby="addon-wrapping" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="row p-5">
+                                        <div
+                                            class="row col-md-4 col-sm-4 col-xs-12 mb-4 text-start d-flex   flex-nowrap justify-content-center align-items-start ">
+                                            <input class="form-check-input col-md-12 col-sm-4 col-xs-5 " type="checkbox"
+                                                value="nice" id="id_car2">
+                                            <label class="form-check-label col-md-12 col-sm-8 col-xs-7"
+                                                for="flexCheckDefault">
+                                                <label>รถยนต์</label>
+                                                <h6>No.</h6>
+                                            </label>
+                                        </div>
+
+                                        <div class=" flex-nowrap col-md-12 col-sm-8 col-xs-12 d-flex flex-column ">
+                                            <label>เลขที่ใบขับขี่</label>
+                                            <h6>No.</h6>
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" aria-describedby="addon-wrapping" id="numcar2"
+                                                disabled value="เช่น กข 1410">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-md-11 col-sm-10 col-xs-10">
+                                        <label>รายชื่อบุคคล (ที่ไม่ใช่ญาติ) ที่สามารถสอบถามรายละเอียดของผู้สมัครได้ 2
+                                            คน</label>
+                                        <h6>PERSONAL REFERENCE 2 PERSON (OTHER THAN RELATIVES OR FORMER EMPLOYERS)</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label>บุคคลที่ 1</label>
+                                        <h6>PERSONAL REFERENCE 1</h6>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>ชื่อ - นามสกุล</label>
+                                        <h6>FULLNAME</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="PERSONAL_name"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>ความสัมพันธ์</label>
+                                        <h6>RELATIONSHIP</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="RELATIONSHIP_personal"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>สถานที่ทำงาน</label>
+                                        <h6>COMPANY NAME</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="COMPANY_name"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>ตำแหน่ง</label>
+                                        <h6>POSITION</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="POSITION_name"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>เบอร์โทรศัพท์</label>
+                                        <h6>MOBILE PHONE</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="POSITION_MOBILE"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-sm-4 head_con2 ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label>บุคคลที่ 2</label>
+                                        <h6>PERSONAL REFERENCE 2</h6>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>ชื่อ - นามสกุล</label>
+                                        <h6>FULLNAME</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="PERSONAL_name2"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>ความสัมพันธ์</label>
+                                        <h6>RELATIONSHIP</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="RELATIONSHIP_personal2"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>สถานที่ทำงาน</label>
+                                        <h6>COMPANY NAME</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="COMPANY_name2"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>ตำแหน่ง</label>
+                                        <h6>POSITION</h6>
+                                        <div class="input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="POSITION_name2"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-4 col-sm-4 col-xs-6 mb-3">
+                                        <label>เบอร์โทรศัพท์</label>
+                                        <h6>MOBILE PHONE</h6>
+                                        <div class="form-control-gknn input-group flex-nowrap">
+                                            <input type="text" class="form-control" placeholder="0"
+                                                aria-label="Username" id="POSITION_MOBILE"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                        <small>Error Message</small>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card mb-5">
+                    <div class=" mt-4 container-fluid bg-white">
+                        <div class="p-sm-4 ">
+
+                            <div class="p-sm-4 head_con2 border-bottom">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <label>ฟอร์มตรวจสอบเอกสารการสมัครงาน</label>
+                                        <span style="color: red;"> (ไฟล์ที่สามารถแนบได้ .pdf, *.jpg
+                                            ขนาดไฟล์สูงสุดไม่เกิน 2
+                                            MB)</span>
+                                        <h6>APPLICATION FORM</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5 mt-4">
+                                    <label>1. สำเนาบัตรประชาชน ( 1 ฉบับ )</label>
+                                    <span style="color: red;"> *</span>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile1">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>2. สำเนาทะเบียนบ้าน ( 1 ฉบับ )</label>
+                                    <span style="color: red;"> *</span>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile2">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>3. สำเนาวุฒิการศึกษา ( 1 ฉบับ ) </label>
+                                    <span style="color: red;"> *</span>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile3">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>4. สำเนาผลการศึกษา (ฉบับสมบูรณ์ 1 ฉบับ )</label>
+                                    <span style="color: red;"> *</span>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile4">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>5. รูปถ่าย 1.5 นิ้ว ( ถ่ายไม่เกิน 6 เดือน )</label>
+                                    <span style="color: red;"> *</span>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile5">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>6. หนังสือรับรองผ่านงาน ( 1 ฉบับ )</label>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile6">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>7. สำเนาใบสด.8/43 ( 1 ฉบับ )</label>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile7">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>8. สำเนาใบประกอบวิชาชีพ ( 1 ฉบับ )</label>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile8">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>9. สำเนาการฝึกอบรม/ผลงาน ( 1 ฉบับ )</label>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile9">
+                                    </div>
+                                </div>
+                                <div class="col-5 mt-4">
+                                    <label>10. อื่นๆ</label>
+                                </div>
+                                <div class="col-7 mt-4">
+                                    <div class="input-group flex-nowrap">
+                                        <input class="form-control" type="file" id="formFile10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="card">
+                    <div id="fooder">
+                        <div class=" mt-4 container-fluid bg-white">
+                            <div class="p-sm-4 border-bottom">
+
+                                <div class="p-sm-4 head_con2 border-bottom">
+                                    <div class="col-12 mb-4">
+                                        <label>บริษัทไม่มีนโยบายปรับเงินเดือนหลังจากการผ่านการทดลองงาน</label>
+                                        <h6>THE COMPANY HAS NO SALARY INCREASE POLICY AFTER THE TRAIL</h6>
+                                    </div>
+                                </div>
+                                <div class="p-sm-4 row">
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <select class="form-select mb-4 " aria-label="Default select example"
+                                            id="COMPANY_Yes_no">
+                                            <option value="0" selected>Please select</option>
+                                            <option value="1">ไม่ยินยอม</option>
+                                            <option value="1">ยินยอม</option>
+                                        </select>
+                                        <small id="logInputError" class="error"
+                                            style="display: none;">โปรดป้อนข้อมูล</small>
+                                    </div>
+                                    <div class="col-12">
+                                        <labee>-</labee>
+                                        <p> ข้าพเจ้าขอรับรองว่าข้อความทั้งหมดที่ข้าพเจ้าให้ไว้เป็นความจริงถูกต้องทุกประการ
+                                            หากข้อความใดเป็นความเท็จหรือไม่ตรงกับความจริงให้ถือเป็นหลักฐานเพื่อเลิกจ้างข้าพเจ้าได้โดยทันที
+                                            โดยบริษัทฯ ไม่ต้องจ่ายเงินชดเชยหรือค่าเสียหายใด ๆ ทั้งสิ้น</p>
+                                        <labee>-</labee>
+                                        <p> The Statement Made By Me In This Application Are True, Complete And Correct.
+                                            A False
+                                            Statement Or Dishonest Answer To Any Questions May Be Grounds From My
+                                            Immediate
+                                            Discharge From Employment With The Company Without Any Compensation Or
+                                            Severance Pay
+                                            Whatsoever</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-outline-medeze "
+                                            id="addTrainingRecord">submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
